@@ -1,0 +1,14 @@
+name: PracticeCore
+main: moe.lacota.practicecore.PracticePlugin
+version: 1.337
+author: Lacota
+depend: [ProtocolLib]
+commands:
+  spectate:
+  team:
+  duel:
+  accept:
+  inv:
+  arena:
+  elo:
+  help:
