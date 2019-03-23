@@ -2,7 +2,7 @@ package moe.lacota.practicecore.commands;
 
 import lombok.RequiredArgsConstructor;
 import moe.lacota.practicecore.PracticePlugin;
-import moe.lacota.practicecore.duels.DuelManager.DuelType;
+import moe.lacota.practicecore.duels.DuelType;
 import moe.lacota.practicecore.players.PracticePlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

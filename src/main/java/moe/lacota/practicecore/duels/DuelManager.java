@@ -35,9 +35,8 @@ import org.bukkit.event.entity.PotionSplashEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 
-@RequiredArgsConstructor
 public class DuelManager implements Listener {
-	private final PracticePlugin plugin;
+	private PracticePlugin plugin;
 
 	private final List<Duel> duels = new ArrayList<>();
 	private final Set<DuelRequest> duelRequests = new HashSet<>();
@@ -45,7 +44,12 @@ public class DuelManager implements Listener {
 	private final Set<Inventory> inventories = new HashSet<>();
 
 	@Getter
-	private final QueueSystem queueSystem = new QueueSystem(plugin);
+	private final QueueSystem queueSystem;
+
+	public DuelManager(PracticePlugin plugin) {
+	    this.plugin = plugin;
+	    this.queueSystem = new QueueSystem(plugin);
+    }
 
 	public List<Duel> getDuels() {
 		return duels;
